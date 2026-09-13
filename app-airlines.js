@@ -113,6 +113,14 @@ dealCard = function dealCardWithEvidence(deal, options = {}) {
     `<span>Companhia</span><strong>${friendlyAirline}</strong>`
   );
 
+  // A fonte fica amigável no card; o endpoint continua disponível como tooltip.
+  const endpointDisplay = escapeHtml((deal.sourceEndpoint || 'Data API').replace('aviasales/v3/', 'v3/'));
+  const endpointTitle = escapeHtml(deal.sourceEndpoint || 'Data API');
+  html = html.replace(
+    `<span>Fonte</span><strong>${endpointDisplay}</strong>`,
+    `<span>Fonte</span><strong title="API: ${endpointTitle}">Travelpayouts / Aviasales</strong>`
+  );
+
   // O valor do cache é referência de busca, não uma tarifa garantida.
   html = html.replace(
     '<div class="per-person">por pessoa</div>',
