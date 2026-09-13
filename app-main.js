@@ -96,8 +96,15 @@ async function loadData(cacheBust = false) {
 async function init() {
   try {
     state.config = await fetchJson('config.json');
-    state.vacations = safeJsonParse(localStorage.getItem(STORAGE.vacations), null) || state.config.vacationPeriods || [];
-    state.favorites = safeJsonParse(localStorage.getItem(STORAGE.favorites), []);
+
+    const storedVacations = safeJsonParse(localStorage.getItem(STORAGE.vacations), null);
+    state.vacations = Array.isArray(storedVacations)
+      ? storedVacations
+      : (Array.isArray(state.config.vacationPeriods) ? state.config.vacationPeriods : []);
+
+    const storedFavorites = safeJsonParse(localStorage.getItem(STORAGE.favorites), []);
+    state.favorites = Array.isArray(storedFavorites) ? storedFavorites : [];
+
     state.travelers = clamp(Number(localStorage.getItem(STORAGE.travelers) || state.config.defaultTravelers || 1), 1, 20);
 
     $('#originLabel').textContent = state.config.origin;
