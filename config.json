@@ -34,8 +34,10 @@
   ],
   "airportCatalog": {
     "FLN": {"city": "Florianópolis", "country": "Brasil", "countryCode": "BR", "region": "Brasil"},
+    "RIO": {"city": "Rio de Janeiro", "country": "Brasil", "countryCode": "BR", "region": "Brasil"},
     "GIG": {"city": "Rio de Janeiro", "country": "Brasil", "countryCode": "BR", "region": "Brasil"},
     "SDU": {"city": "Rio de Janeiro", "country": "Brasil", "countryCode": "BR", "region": "Brasil"},
+    "SAO": {"city": "São Paulo", "country": "Brasil", "countryCode": "BR", "region": "Brasil"},
     "GRU": {"city": "São Paulo", "country": "Brasil", "countryCode": "BR", "region": "Brasil"},
     "CGH": {"city": "São Paulo", "country": "Brasil", "countryCode": "BR", "region": "Brasil"},
     "IGU": {"city": "Foz do Iguaçu", "country": "Brasil", "countryCode": "BR", "region": "Brasil"},
