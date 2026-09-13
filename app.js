@@ -1,5 +1,5 @@
 (async () => {
-  const files = ['app-core.js', 'app-ui.js', 'app-main.js'];
+  const files = ['app-core.js', 'app-ui.js', 'app-airlines.js', 'app-main.js'];
   for (const src of files) {
     await new Promise((resolve, reject) => {
       const script = document.createElement('script');
