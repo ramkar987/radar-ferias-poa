@@ -1,0 +1,73 @@
+{
+  "appName": "Radar de Férias POA",
+  "origin": "POA",
+  "originName": "Porto Alegre",
+  "currency": "BRL",
+  "market": "br",
+  "locale": "pt",
+  "staleAfterHours": 36,
+  "defaultTravelers": 3,
+  "collection": {
+    "horizonMonths": 18,
+    "historyRetentionDays": 540,
+    "maxHistoryObservations": 50000,
+    "requestDelayMs": 140,
+    "trackedDestinations": ["FLN", "GIG", "SDU", "BUE", "SCL", "MVD", "IGU", "REC", "MCZ", "SSA", "CUN", "MCO", "LIS", "MAD"]
+  },
+  "vacationPeriods": [
+    {
+      "id": "julho-2027",
+      "name": "Férias de julho 2027",
+      "start": "2027-07-05",
+      "end": "2027-08-01",
+      "minDays": 5,
+      "maxDays": 15
+    },
+    {
+      "id": "verao-2027-2028",
+      "name": "Férias de verão 2027/2028",
+      "start": "2027-12-18",
+      "end": "2028-02-20",
+      "minDays": 5,
+      "maxDays": 20
+    }
+  ],
+  "airportCatalog": {
+    "FLN": {"city": "Florianópolis", "country": "Brasil", "countryCode": "BR", "region": "Brasil"},
+    "GIG": {"city": "Rio de Janeiro", "country": "Brasil", "countryCode": "BR", "region": "Brasil"},
+    "SDU": {"city": "Rio de Janeiro", "country": "Brasil", "countryCode": "BR", "region": "Brasil"},
+    "GRU": {"city": "São Paulo", "country": "Brasil", "countryCode": "BR", "region": "Brasil"},
+    "CGH": {"city": "São Paulo", "country": "Brasil", "countryCode": "BR", "region": "Brasil"},
+    "IGU": {"city": "Foz do Iguaçu", "country": "Brasil", "countryCode": "BR", "region": "Brasil"},
+    "REC": {"city": "Recife", "country": "Brasil", "countryCode": "BR", "region": "Brasil"},
+    "MCZ": {"city": "Maceió", "country": "Brasil", "countryCode": "BR", "region": "Brasil"},
+    "SSA": {"city": "Salvador", "country": "Brasil", "countryCode": "BR", "region": "Brasil"},
+    "FOR": {"city": "Fortaleza", "country": "Brasil", "countryCode": "BR", "region": "Brasil"},
+    "NAT": {"city": "Natal", "country": "Brasil", "countryCode": "BR", "region": "Brasil"},
+    "BSB": {"city": "Brasília", "country": "Brasil", "countryCode": "BR", "region": "Brasil"},
+    "CWB": {"city": "Curitiba", "country": "Brasil", "countryCode": "BR", "region": "Brasil"},
+    "BUE": {"city": "Buenos Aires", "country": "Argentina", "countryCode": "AR", "region": "América do Sul"},
+    "EZE": {"city": "Buenos Aires", "country": "Argentina", "countryCode": "AR", "region": "América do Sul"},
+    "AEP": {"city": "Buenos Aires", "country": "Argentina", "countryCode": "AR", "region": "América do Sul"},
+    "SCL": {"city": "Santiago", "country": "Chile", "countryCode": "CL", "region": "América do Sul"},
+    "MVD": {"city": "Montevidéu", "country": "Uruguai", "countryCode": "UY", "region": "América do Sul"},
+    "LIM": {"city": "Lima", "country": "Peru", "countryCode": "PE", "region": "América do Sul"},
+    "BOG": {"city": "Bogotá", "country": "Colômbia", "countryCode": "CO", "region": "América do Sul"},
+    "ASU": {"city": "Assunção", "country": "Paraguai", "countryCode": "PY", "region": "América do Sul"},
+    "CUN": {"city": "Cancún", "country": "México", "countryCode": "MX", "region": "Caribe"},
+    "PUJ": {"city": "Punta Cana", "country": "República Dominicana", "countryCode": "DO", "region": "Caribe"},
+    "HAV": {"city": "Havana", "country": "Cuba", "countryCode": "CU", "region": "Caribe"},
+    "MCO": {"city": "Orlando", "country": "Estados Unidos", "countryCode": "US", "region": "América do Norte"},
+    "MIA": {"city": "Miami", "country": "Estados Unidos", "countryCode": "US", "region": "América do Norte"},
+    "NYC": {"city": "Nova York", "country": "Estados Unidos", "countryCode": "US", "region": "América do Norte"},
+    "JFK": {"city": "Nova York", "country": "Estados Unidos", "countryCode": "US", "region": "América do Norte"},
+    "LIS": {"city": "Lisboa", "country": "Portugal", "countryCode": "PT", "region": "Europa"},
+    "MAD": {"city": "Madri", "country": "Espanha", "countryCode": "ES", "region": "Europa"},
+    "BCN": {"city": "Barcelona", "country": "Espanha", "countryCode": "ES", "region": "Europa"},
+    "PAR": {"city": "Paris", "country": "França", "countryCode": "FR", "region": "Europa"},
+    "CDG": {"city": "Paris", "country": "França", "countryCode": "FR", "region": "Europa"},
+    "LON": {"city": "Londres", "country": "Reino Unido", "countryCode": "GB", "region": "Europa"},
+    "FCO": {"city": "Roma", "country": "Itália", "countryCode": "IT", "region": "Europa"},
+    "AMS": {"city": "Amsterdã", "country": "Países Baixos", "countryCode": "NL", "region": "Europa"}
+  }
+}
