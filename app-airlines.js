@@ -34,6 +34,20 @@ const OFFICIAL_AIRLINES = {
   document.head.appendChild(style);
 })();
 
+// Deixa claro, já no topo, que o produto encontra sinais de preço e não vende
+// nem garante a tarifa exibida.
+(() => {
+  const tagline = document.querySelector('.brand-wrap p');
+  if (tagline) tagline.textContent = 'Radar de evidências recentes de preço para saber quando vale procurar.';
+
+  const toolbarHint = document.querySelector('.results-toolbar .muted');
+  if (toolbarHint) toolbarHint.textContent = '• preço de referência por pessoa • ida e volta • confirme antes de comprar';
+
+  document.querySelectorAll('.metric-label').forEach(label => {
+    if (label.textContent.includes('Menor preço encontrado')) label.textContent = '💰 Menor referência encontrada';
+  });
+})();
+
 function officialAirline(deal) {
   return OFFICIAL_AIRLINES[String(deal?.airline || '').toUpperCase()] || null;
 }
