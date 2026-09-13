@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Radar de Férias POA: encontre oportunidades de passagens saindo de Porto Alegre com comparação histórica e foco em férias escolares.">
+  <title>Radar de Férias POA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand-wrap">
+      <div class="brand-icon" aria-hidden="true">✈</div>
+      <div>
+        <h1>Radar de Férias POA</h1>
+        <p>Encontre quando e para onde viajar pagando menos.</p>
+      </div>
+    </div>
+    <div class="top-actions">
+      <span id="updateStatus" class="update-status">Última atualização: —</span>
+      <button id="themeToggle" class="icon-button" type="button" aria-label="Alternar tema">🌙</button>
+    </div>
+  </header>
+
+  <div id="staleBanner" class="banner warning hidden" role="status"></div>
+  <div id="errorBanner" class="banner danger hidden" role="status"></div>
+
+  <main class="shell">
+    <section class="hero-grid" aria-label="Resumo do radar">
+      <article class="metric-card">
+        <span class="metric-label">🔥 Melhor oportunidade</span>
+        <strong id="metricBest">—</strong>
+        <small id="metricBestSub">Aguardando dados</small>
+      </article>
+      <article class="metric-card">
+        <span class="metric-label">💰 Menor preço encontrado</span>
+        <strong id="metricLowest">—</strong>
+        <small id="metricLowestSub">Aguardando dados</small>
+      </article>
+      <article class="metric-card">
+        <span class="metric-label">🏆 Maior desconto observado</span>
+        <strong id="metricDiscount">—</strong>
+        <small id="metricDiscountSub">Requer histórico comparável</small>
+      </article>
+    </section>
+
+    <nav class="tabs" aria-label="Navegação principal">
+      <button class="tab active" data-tab="achados" type="button">Achados</button>
+      <button class="tab" data-tab="ferias" type="button">Férias</button>
+      <button class="tab" data-tab="calendario" type="button">Calendário</button>
+      <button class="tab" data-tab="favoritos" type="button">Favoritos</button>
+      <button class="tab" data-tab="historico" type="button">Histórico</button>
+      <button class="tab" data-tab="configuracoes" type="button">Configurações</button>
+    </nav>
+
+    <section id="tab-achados" class="tab-panel active">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">RADAR AGORA</p>
+          <h2>Melhores oportunidades saindo de <span id="originLabel">POA</span></h2>
+          <p>Ordenação por oportunidade, não apenas por menor preço.</p>
+        </div>
+        <div class="heading-actions">
+          <button id="resetFilters" class="button ghost" type="button">Limpar filtros</button>
+        </div>
+      </div>
+
+      <div class="filters card">
+        <div class="field wide">
+          <label for="vacationFilter">Período de férias</label>
+          <select id="vacationFilter"></select>
+        </div>
+        <div class="field">
+          <label for="regionFilter">Região</label>
+          <select id="regionFilter">
+            <option value="">Qualquer destino</option>
+            <option>Brasil</option>
+            <option>América do Sul</option>
+            <option>Caribe</option>
+            <option>América do Norte</option>
+            <option>Europa</option>
+            <option value="Internacional">Internacional</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="destinationFilter">Destino / IATA</label>
+          <input id="destinationFilter" type="search" placeholder="Ex.: Buenos Aires, SCL">
+        </div>
+        <div class="field">
+          <label for="maxPriceFilter">Preço máximo</label>
+          <input id="maxPriceFilter" type="number" min="0" step="50" placeholder="Sem limite">
+        </div>
+        <div class="field">
+          <label for="stopsFilter">Conexões</label>
+          <select id="stopsFilter">
+            <option value="">Qualquer</option>
+            <option value="0">Somente direto</option>
+            <option value="1">No máximo 1 conexão</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="minDaysFilter">Duração mínima</label>
+          <input id="minDaysFilter" type="number" min="1" placeholder="dias">
+        </div>
+        <div class="field">
+          <label for="maxDaysFilter">Duração máxima</label>
+          <input id="maxDaysFilter" type="number" min="1" placeholder="dias">
+        </div>
+        <div class="field">
+          <label for="airlineFilter">Companhia (IATA)</label>
+          <input id="airlineFilter" type="text" maxlength="3" placeholder="Ex.: G3">
+        </div>
+        <div class="field">
+          <label for="minScoreFilter">Score mínimo</label>
+          <input id="minScoreFilter" type="number" min="0" max="100" value="0">
+        </div>
+      </div>
+
+      <div class="results-toolbar">
+        <div>
+          <strong id="resultCount">0 oportunidades</strong>
+          <span class="muted">• preço por pessoa • ida e volta • cabine conforme dados da fonte</span>
+        </div>
+        <select id="sortSelect" aria-label="Ordenar oportunidades">
+          <option value="score">Melhor oportunidade</option>
+          <option value="price">Menor preço</option>
+          <option value="discount">Maior desconto observado</option>
+          <option value="freshness">Mais recente</option>
+        </select>
+      </div>
+
+      <div id="dealsGrid" class="deals-grid"></div>
+      <div id="emptyDeals" class="empty-state hidden">
+        <div class="empty-icon">🛰️</div>
+        <h3>Nenhuma oferta recente encontrada nesta fonte.</h3>
+        <p>Tente remover filtros ou aguarde uma próxima atualização do cache da Travelpayouts.</p>
+      </div>
+    </section>
+
+    <section id="tab-ferias" class="tab-panel">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">JANELAS FLEXÍVEIS</p>
+          <h2>Radar de férias escolares</h2>
+          <p>Cadastre períodos localmente e descubra combinações de ida e volta disponíveis no cache.</p>
+        </div>
+        <button id="addVacationBtn" class="button primary" type="button">+ Novo período</button>
+      </div>
+      <div id="vacationsList" class="stack"></div>
+      <div class="info-box">
+        <strong>Como funciona</strong>
+        <p>Os períodos criados aqui ficam no seu navegador. O radar filtra os preços já coletados pelo GitHub Action. Para fazer o coletor consultar sistematicamente um novo período, inclua-o também em <code>config.json</code>.</p>
+      </div>
+    </section>
+
+    <section id="tab-calendario" class="tab-panel">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">VISÃO POR DATA</p>
+          <h2>Calendário de preços</h2>
+          <p>Menor preço observado para saídas em cada dia, com as voltas compatíveis.</p>
+        </div>
+      </div>
+      <div class="calendar-controls card">
+        <div class="field">
+          <label for="calendarDestination">Destino</label>
+          <select id="calendarDestination"></select>
+        </div>
+        <div class="field">
+          <label for="calendarMonth">Mês</label>
+          <input id="calendarMonth" type="month">
+        </div>
+        <div class="field">
+          <label for="calendarVacation">Respeitar férias</label>
+          <select id="calendarVacation"></select>
+        </div>
+      </div>
+      <div id="calendarGrid" class="calendar-grid"></div>
+      <div id="calendarDetails" class="card calendar-details hidden"></div>
+      <div id="calendarEmpty" class="empty-state hidden">
+        <div class="empty-icon">📅</div>
+        <h3>Sem dados suficientes para este mês/destino.</h3>
+        <p>O calendário só mostra preços que realmente foram coletados.</p>
+      </div>
+    </section>
+
+    <section id="tab-favoritos" class="tab-panel">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">SEUS DESTINOS</p>
+          <h2>Alguma promoção para meus favoritos?</h2>
+          <p>Favoritos são salvos apenas neste navegador.</p>
+        </div>
+      </div>
+      <div class="favorite-add card">
+        <div class="field grow">
+          <label for="favoriteInput">Adicionar destino</label>
+          <input id="favoriteInput" list="favoriteOptions" placeholder="Digite IATA ou cidade">
+          <datalist id="favoriteOptions"></datalist>
+        </div>
+        <button id="addFavoriteBtn" class="button primary" type="button">Adicionar</button>
+      </div>
+      <div id="favoritesChips" class="chips"></div>
+      <div id="favoritesGrid" class="deals-grid"></div>
+      <div id="favoritesEmpty" class="empty-state hidden">
+        <div class="empty-icon">♡</div>
+        <h3>Você ainda não tem favoritos com ofertas coletadas.</h3>
+        <p>Adicione destinos acima. Um destino favorito não é tratado como promoção sem evidência histórica.</p>
+      </div>
+    </section>
+
+    <section id="tab-historico" class="tab-panel">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">HISTÓRICO PRÓPRIO</p>
+          <h2>Evolução dos preços observados</h2>
+          <p>Comparações são feitas somente quando existem pelo menos cinco observações comparáveis.</p>
+        </div>
+      </div>
+      <div class="history-controls card">
+        <div class="field">
+          <label for="historyRoute">Rota</label>
+          <select id="historyRoute"></select>
+        </div>
+        <div class="field">
+          <label for="historyMonth">Mês de viagem</label>
+          <select id="historyMonth"><option value="">Todos</option></select>
+        </div>
+      </div>
+      <div id="historyStats" class="hero-grid compact"></div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Encontrado em</th>
+              <th>Ida</th>
+              <th>Volta</th>
+              <th>Preço</th>
+              <th>Companhia</th>
+              <th>Conexões</th>
+              <th>Fonte</th>
+            </tr>
+          </thead>
+          <tbody id="historyTable"></tbody>
+        </table>
+      </div>
+      <div id="historyEmpty" class="empty-state hidden">
+        <div class="empty-icon">📈</div>
+        <h3>Histórico ainda insuficiente.</h3>
+        <p>Ele cresce gradualmente a cada atualização automática.</p>
+      </div>
+    </section>
+
+    <section id="tab-configuracoes" class="tab-panel">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">PREFERÊNCIAS</p>
+          <h2>Configurações locais</h2>
+          <p>Estas preferências ficam no seu navegador e não alteram o repositório.</p>
+        </div>
+      </div>
+      <div class="settings-grid">
+        <article class="card">
+          <h3>Viagem</h3>
+          <div class="field">
+            <label for="travelersInput">Quantidade de viajantes</label>
+            <input id="travelersInput" type="number" min="1" max="20">
+          </div>
+          <p class="muted small">A estimativa familiar é apenas preço unitário × quantidade. Não presume tarifa infantil.</p>
+        </article>
+        <article class="card">
+          <h3>Origem do coletor</h3>
+          <p><strong id="settingsOrigin">POA — Porto Alegre</strong></p>
+          <p class="muted small">Para trocar a origem do projeto, edite <code>config.json</code> no repositório. O GitHub Action usará o novo aeroporto na atualização seguinte.</p>
+        </article>
+        <article class="card">
+          <h3>Dados</h3>
+          <p id="dataSummary">—</p>
+          <button id="reloadDataBtn" class="button ghost" type="button">Recarregar arquivos JSON</button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <aside id="compareBar" class="compare-bar hidden" aria-live="polite">
+    <div>
+      <strong>Comparar oportunidades</strong>
+      <span id="compareCount">0/3 selecionadas</span>
+    </div>
+    <div class="compare-actions">
+      <button id="clearCompare" class="button ghost" type="button">Limpar</button>
+      <button id="openCompare" class="button primary" type="button">Comparar</button>
+    </div>
+  </aside>
+
+  <dialog id="compareDialog" class="modal">
+    <div class="modal-head">
+      <div>
+        <p class="eyebrow">LADO A LADO</p>
+        <h2>Comparação</h2>
+      </div>
+      <button id="closeCompare" class="icon-button" type="button" aria-label="Fechar">✕</button>
+    </div>
+    <div id="compareContent" class="compare-grid"></div>
+  </dialog>
+
+  <dialog id="vacationDialog" class="modal small-modal">
+    <form id="vacationForm" method="dialog">
+      <div class="modal-head">
+        <div>
+          <p class="eyebrow">PERÍODO</p>
+          <h2 id="vacationDialogTitle">Novo período</h2>
+        </div>
+        <button id="closeVacation" class="icon-button" type="button" aria-label="Fechar">✕</button>
+      </div>
+      <input id="vacationId" type="hidden">
+      <div class="form-grid">
+        <div class="field full">
+          <label for="vacationName">Nome</label>
+          <input id="vacationName" required placeholder="Ex.: Férias de julho">
+        </div>
+        <div class="field">
+          <label for="vacationStart">Data inicial</label>
+          <input id="vacationStart" type="date" required>
+        </div>
+        <div class="field">
+          <label for="vacationEnd">Data final</label>
+          <input id="vacationEnd" type="date" required>
+        </div>
+        <div class="field">
+          <label for="vacationMin">Viagem mínima (dias)</label>
+          <input id="vacationMin" type="number" min="1" required value="5">
+        </div>
+        <div class="field">
+          <label for="vacationMax">Viagem máxima (dias)</label>
+          <input id="vacationMax" type="number" min="1" required value="15">
+        </div>
+      </div>
+      <div class="modal-actions">
+        <button id="cancelVacation" class="button ghost" type="button">Cancelar</button>
+        <button class="button primary" type="submit">Salvar período</button>
+      </div>
+    </form>
+  </dialog>
+
+  <footer>
+    <p>Dados recentes em cache da Travelpayouts / Aviasales. <strong>Confirme sempre o valor antes da compra.</strong></p>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
