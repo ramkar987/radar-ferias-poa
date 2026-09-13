@@ -9,6 +9,31 @@ const OFFICIAL_AIRLINES = {
   LA: { name: 'LATAM', url: 'https://www.latamairlines.com/br/pt' }
 };
 
+// Estilos pequenos e autocontidos desta camada de evidência.
+(() => {
+  const style = document.createElement('style');
+  style.textContent = `
+    .evidence-line {
+      display: grid;
+      gap: 3px;
+      padding: 10px 11px;
+      border: 1px solid color-mix(in srgb, var(--primary) 25%, var(--border));
+      border-radius: 10px;
+      background: color-mix(in srgb, var(--primary) 5%, var(--surface));
+      font-size: .78rem;
+      line-height: 1.4;
+    }
+    .evidence-line strong { font-size: .8rem; }
+    .evidence-line span { color: var(--text); }
+    .evidence-line small { color: var(--muted); }
+    .evidence-line.growing { border-color: color-mix(in srgb, var(--good) 32%, var(--border)); }
+    .evidence-line.consolidated { border-color: color-mix(in srgb, var(--good) 55%, var(--border)); }
+    .airline-direct { text-align: center; }
+    .per-person { max-width: 180px; }
+  `;
+  document.head.appendChild(style);
+})();
+
 function officialAirline(deal) {
   return OFFICIAL_AIRLINES[String(deal?.airline || '').toUpperCase()] || null;
 }
