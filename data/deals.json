@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-09-17T14:18:36.244Z",
-    "lastAttemptAt": "2026-09-17T14:18:36.244Z",
+    "generatedAt": "2026-09-17T23:33:48.145Z",
+    "lastAttemptAt": "2026-09-17T23:33:48.145Z",
     "origin": "POA",
     "currency": "BRL",
     "source": "Travelpayouts / Aviasales Data API",
@@ -33,7 +33,7 @@
       "firstMonth": "2026-09",
       "lastMonth": "2028-02"
     },
-    "freshDealCount": 89,
+    "freshDealCount": 87,
     "carriedForwardCount": 0
   },
   "deals": [
@@ -110,12 +110,12 @@
       }
     },
     {
-      "id": "52fa78002accd02c1797",
+      "id": "b5b2e0bdc5cebae3ccde",
       "origin": "POA",
       "destination": "FLN",
       "departureAt": "2026-11-03T06:05:00-03:00",
       "returnAt": "2026-11-07T06:05:00-03:00",
-      "price": 753,
+      "price": 750,
       "currency": "BRL",
       "airline": "G3",
       "transfers": 0,
@@ -123,7 +123,7 @@
       "foundAt": null,
       "duration": 275,
       "actual": true,
-      "link": "/search/POA0311FLN07111?t=G317936859001793689500000060POAFLN17940315001794044400000215FLNCGHPOA_25cbb92814315b6e1c5a5cc580492c8f_12318&search_date=17092026&expected_price_uuid=01a0add4-cc30-8050-6e03-bda62743c143&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=SywscU6JLxRIZR70oCYGHw&expected_price_source=share&expected_price_currency=brl&expected_price=753",
+      "link": "/search/POA0311FLN07111?t=G317936859001793689500000060POAFLN17940315001794044400000215FLNCGHPOA_25cbb92814315b6e1c5a5cc580492c8f_12318&search_date=17092026&expected_price_uuid=01a0add4-cc30-8050-6e03-bda62743c143&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=SywscU6JLxRIZR70oCYGHw&expected_price_source=share&expected_price_currency=brl&expected_price=750",
       "source": "Travelpayouts / Aviasales Data API",
       "sourceEndpoint": "aviasales/v3/prices_for_dates",
       "metadata": {
@@ -542,30 +542,6 @@
       }
     },
     {
-      "id": "55223acb78066cf4dc7b",
-      "origin": "POA",
-      "destination": "SAO",
-      "departureAt": "2026-09-28T09:45:00-03:00",
-      "returnAt": "2026-10-03T12:55:00-03:00",
-      "price": 1137,
-      "currency": "BRL",
-      "airline": "AD",
-      "transfers": 0,
-      "returnTransfers": 0,
-      "foundAt": null,
-      "duration": 210,
-      "actual": true,
-      "link": "/search/POA2809SAO03101?t=AD17905887001790595000000105POAGRU17910321001791038400000105GRUPOA_b3f4382563bc97a6420337b0b1aef72f_18701&search_date=10092026&expected_price_uuid=01a08d0c-9af6-8040-2792-88e15acada2d&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=uRXu04aV3l82DrxHmX1ulA&expected_price_source=share&expected_price_currency=brl&expected_price=1137",
-      "source": "Travelpayouts / Aviasales Data API",
-      "sourceEndpoint": "aviasales/v3/prices_for_dates",
-      "metadata": {
-        "originAirport": "POA",
-        "destinationAirport": "GRU",
-        "flightNumber": "2854",
-        "requestedMonth": "2026-09"
-      }
-    },
-    {
       "id": "9f597c774d876c9dc86f",
       "origin": "POA",
       "destination": "SAO",
@@ -635,78 +611,6 @@
         "destinationAirport": "IGU",
         "flightNumber": "3477",
         "requestedMonth": "2026-09"
-      }
-    },
-    {
-      "id": "91279d56cd3e29e108cc",
-      "origin": "POA",
-      "destination": "CAC",
-      "departureAt": "2026-12-19T20:05:00-03:00",
-      "returnAt": "2027-01-03T11:40:00-03:00",
-      "price": 1451,
-      "currency": "BRL",
-      "airline": "LA",
-      "transfers": 2,
-      "returnTransfers": 1,
-      "foundAt": null,
-      "duration": 1390,
-      "actual": true,
-      "link": "/search/POA1912CAC03011?t=LA17977107001797774600001065POASDUGRUCAC17989764001798995900000325CACCWBPOA_22ac8793994bb1d4f70f214fd7624786_23858&search_date=10092026&expected_price_uuid=01a08d28-6afd-8030-213d-6f0047d89c10&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=94-6gWJ2ECWT83eMfoq4dA&expected_price_source=share&expected_price_currency=brl&expected_price=1451",
-      "source": "Travelpayouts / Aviasales Data API",
-      "sourceEndpoint": "aviasales/v3/prices_for_dates",
-      "metadata": {
-        "originAirport": "POA",
-        "destinationAirport": "CAC",
-        "flightNumber": "3973",
-        "requestedMonth": "2026-12"
-      }
-    },
-    {
-      "id": "b1b0600aacc2e8d1f33f",
-      "origin": "POA",
-      "destination": "BSB",
-      "departureAt": "2026-10-01T11:00:00-03:00",
-      "returnAt": "2026-10-01T16:45:00-03:00",
-      "price": 1481,
-      "currency": "BRL",
-      "airline": "LA",
-      "transfers": 0,
-      "returnTransfers": 2,
-      "foundAt": null,
-      "duration": 510,
-      "actual": true,
-      "link": "/search/POA0110BSB01101?t=LA17908524001790861400000150POABSB17908731001790894700000360BSBSDUCGHPOA_322447232f125bd466f92ff6a80d0505_24353&search_date=10092026&expected_price_uuid=01a08c90-eb01-8040-a697-003ba6f111fc&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=VuiacCXee1Rm9QZtKkC5YA&expected_price_source=share&expected_price_currency=brl&expected_price=1481",
-      "source": "Travelpayouts / Aviasales Data API",
-      "sourceEndpoint": "aviasales/v3/prices_for_dates",
-      "metadata": {
-        "originAirport": "POA",
-        "destinationAirport": "BSB",
-        "flightNumber": "3952",
-        "requestedMonth": "2026-10"
-      }
-    },
-    {
-      "id": "e105bccaba37c81916cc",
-      "origin": "POA",
-      "destination": "BSB",
-      "departureAt": "2026-10-01T11:00:00-03:00",
-      "returnAt": "2026-10-02T06:25:00-03:00",
-      "price": 1481,
-      "currency": "BRL",
-      "airline": "LA",
-      "transfers": 0,
-      "returnTransfers": 2,
-      "foundAt": null,
-      "duration": 545,
-      "actual": true,
-      "link": "/search/POA0110BSB02101?t=LA17908524001790861400000150POABSB17909223001790946000000395BSBSDUCGHPOA_6cf7c2a9db3013a23f485e925065e388_24353&search_date=10092026&expected_price_uuid=01a08c8f-80bf-8040-6bc6-b1a544836d2f&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=dUbA9WhYrgwbQ4fJyqYsxw&expected_price_source=share&expected_price_currency=brl&expected_price=1481",
-      "source": "Travelpayouts / Aviasales Data API",
-      "sourceEndpoint": "aviasales/v3/prices_for_dates",
-      "metadata": {
-        "originAirport": "POA",
-        "destinationAirport": "BSB",
-        "flightNumber": "3952",
-        "requestedMonth": "2026-10"
       }
     },
     {
@@ -806,12 +710,12 @@
       }
     },
     {
-      "id": "89c5a699e1c088aec575",
+      "id": "b58ce0ea0af1b3150ce6",
       "origin": "POA",
       "destination": "SSA",
       "departureAt": "2027-01-26T20:05:00-03:00",
       "returnAt": "2027-02-03T09:15:00-03:00",
-      "price": 1711,
+      "price": 1704,
       "currency": "BRL",
       "airline": "LA",
       "transfers": 1,
@@ -819,7 +723,7 @@
       "foundAt": null,
       "duration": 620,
       "actual": true,
-      "link": "/search/POA2601SSA03021?t=AD18009939001801012200000305POAGRUSSA18016461001801665000000315SSAVCPPOA_8dba5ece75d2d6daffc6de315bd554b2_28045&search_date=17092026&expected_price_uuid=01a0aec8-eee3-8030-e705-f549e756a5fb&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=_zczbCTTfNSBQ6y1SD-g3w&expected_price_source=share&expected_price_currency=brl&expected_price=1711",
+      "link": "/search/POA2601SSA03021?t=AD18009939001801012200000305POAGRUSSA18016461001801665000000315SSAVCPPOA_8dba5ece75d2d6daffc6de315bd554b2_28045&search_date=17092026&expected_price_uuid=01a0aec8-eee3-8030-e705-f549e756a5fb&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=_zczbCTTfNSBQ6y1SD-g3w&expected_price_source=share&expected_price_currency=brl&expected_price=1704",
       "source": "Travelpayouts / Aviasales Data API",
       "sourceEndpoint": "aviasales/v3/prices_for_dates",
       "metadata": {
@@ -851,30 +755,6 @@
         "destinationAirport": "SDU",
         "flightNumber": "2915",
         "requestedMonth": "2026-12"
-      }
-    },
-    {
-      "id": "136226a147d38f1c9207",
-      "origin": "POA",
-      "destination": "SAO",
-      "departureAt": "2026-09-17T17:25:00-03:00",
-      "returnAt": "2026-09-22T23:30:00-03:00",
-      "price": 1796,
-      "currency": "BRL",
-      "airline": "LA",
-      "transfers": 1,
-      "returnTransfers": 0,
-      "foundAt": null,
-      "duration": 395,
-      "actual": true,
-      "link": "/search/POA1709SAO22091?t=LA17896659001789683300000290POABSBVCP17901198001790126100000105GRUPOA_3147d191ca60e3bc8df742204761bf8a_29486&search_date=15092026&expected_price_uuid=01a0a2c5-ecb2-8030-26b9-a61e95dd3611&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=uojEQ8Ato10NP-IpcYLCUg&expected_price_source=share&expected_price_currency=brl&expected_price=1796",
-      "source": "Travelpayouts / Aviasales Data API",
-      "sourceEndpoint": "aviasales/v3/prices_for_dates",
-      "metadata": {
-        "originAirport": "POA",
-        "destinationAirport": "VCP",
-        "flightNumber": "3225",
-        "requestedMonth": "2026-09"
       }
     },
     {
@@ -926,12 +806,12 @@
       }
     },
     {
-      "id": "0549eaecb59d1be35af5",
+      "id": "8d21ba06e531cf92c001",
       "origin": "POA",
       "destination": "SAO",
       "departureAt": "2026-09-21T11:00:00-03:00",
       "returnAt": "2026-09-23T05:40:00-03:00",
-      "price": 2142,
+      "price": 2133,
       "currency": "BRL",
       "airline": "LA",
       "transfers": 1,
@@ -939,7 +819,7 @@
       "foundAt": null,
       "duration": 1830,
       "actual": true,
-      "link": "/search/POA2109SAO23091?t=LA17899884001790075100001445POABSBVCP17901420001790165100000385VCPBSBPOA_21dcc16c68e0ef5cd35194a641f12fbf_35134&search_date=17092026&expected_price_uuid=01a0af1f-ae01-8040-2587-ac6a05893f60&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=9-v4q79l11Haf9TzFmo0CA&expected_price_source=share&expected_price_currency=brl&expected_price=2142",
+      "link": "/search/POA2109SAO23091?t=LA17899884001790075100001445POABSBVCP17901420001790165100000385VCPBSBPOA_21dcc16c68e0ef5cd35194a641f12fbf_35134&search_date=17092026&expected_price_uuid=01a0af1f-ae01-8040-2587-ac6a05893f60&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=9-v4q79l11Haf9TzFmo0CA&expected_price_source=share&expected_price_currency=brl&expected_price=2133",
       "source": "Travelpayouts / Aviasales Data API",
       "sourceEndpoint": "aviasales/v3/prices_for_dates",
       "metadata": {
@@ -1043,6 +923,30 @@
         "destinationAirport": null,
         "flightNumber": null,
         "requestedYear": "2026"
+      }
+    },
+    {
+      "id": "6862dde0b706b7fba0ff",
+      "origin": "POA",
+      "destination": "SAO",
+      "departureAt": "2026-09-17T21:55:00-03:00",
+      "returnAt": "2026-09-22T17:35:00-03:00",
+      "price": 2398,
+      "currency": "BRL",
+      "airline": "LA",
+      "transfers": 0,
+      "returnTransfers": 0,
+      "foundAt": null,
+      "duration": 210,
+      "actual": true,
+      "link": "/search/POA1709SAO22091?t=LA17896821001789688400000105POAGRU17900985001790104800000105GRUPOA_d29eb0821a1cd915bd5fdd234c8122b7_39376&search_date=15092026&expected_price_uuid=01a0a2c5-ecb2-8030-26b9-a61e95dd3611&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=ubSyxq5t2DA4UOcHEVZzuA&expected_price_source=share&expected_price_currency=brl&expected_price=2398",
+      "source": "Travelpayouts / Aviasales Data API",
+      "sourceEndpoint": "aviasales/v3/prices_for_dates",
+      "metadata": {
+        "originAirport": "POA",
+        "destinationAirport": "GRU",
+        "flightNumber": "3423",
+        "requestedMonth": "2026-09"
       }
     },
     {
@@ -1190,12 +1094,12 @@
       }
     },
     {
-      "id": "4453d4d8f6f8648e96c3",
+      "id": "83211c4f6a4ebb5cdb00",
       "origin": "POA",
       "destination": "SSA",
       "departureAt": "2026-09-24T10:30:00-03:00",
       "returnAt": "2026-09-30T05:15:00-03:00",
-      "price": 3021,
+      "price": 3008,
       "currency": "BRL",
       "airline": "AD",
       "transfers": 2,
@@ -1203,7 +1107,7 @@
       "foundAt": null,
       "duration": 1335,
       "actual": true,
-      "link": "/search/POA2409SSA30091?t=AD17902458001790293200000790POAGRURECSSA17907453001790778000000545SSACNFCGHPOA_a04f35323a069abb32a8fc5c4f1e6f1d_49394&search_date=17092026&expected_price_uuid=01a0ad5f-9dc3-8040-a504-bf49b330bbce&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=4148ubob28d8RxlnDG-L8A&expected_price_source=share&expected_price_currency=brl&expected_price=3021",
+      "link": "/search/POA2409SSA30091?t=AD17902458001790293200000790POAGRURECSSA17907453001790778000000545SSACNFCGHPOA_a04f35323a069abb32a8fc5c4f1e6f1d_49394&search_date=17092026&expected_price_uuid=01a0ad5f-9dc3-8040-a504-bf49b330bbce&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=4148ubob28d8RxlnDG-L8A&expected_price_source=share&expected_price_currency=brl&expected_price=3008",
       "source": "Travelpayouts / Aviasales Data API",
       "sourceEndpoint": "aviasales/v3/prices_for_dates",
       "metadata": {
@@ -1211,30 +1115,6 @@
         "destinationAirport": "SSA",
         "flightNumber": "2838",
         "requestedMonth": "2026-09"
-      }
-    },
-    {
-      "id": "f88b0649a0f4982c5998",
-      "origin": "POA",
-      "destination": "USH",
-      "departureAt": "2027-01-12T21:05:00-03:00",
-      "returnAt": "2027-01-19T10:10:00-03:00",
-      "price": 3095,
-      "currency": "BRL",
-      "airline": "AR",
-      "transfers": 1,
-      "returnTransfers": 1,
-      "foundAt": null,
-      "duration": 2000,
-      "actual": true,
-      "link": "/search/POA1201USH19011?t=G317997879001799876400001475POAAEPEZEUSH18003534001800384900000525USHGRUPOA_7f536658f60bf75bab1acdb11ac01b1d_50893&search_date=10092026&expected_price_uuid=01a08c3d-ec22-8030-e17e-fd9d66835ee3&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=TTj6cRDjmk9zNl61gqdowg&expected_price_source=share&expected_price_currency=brl&expected_price=3095",
-      "source": "Travelpayouts / Aviasales Data API",
-      "sourceEndpoint": "aviasales/v3/prices_for_dates",
-      "metadata": {
-        "originAirport": "POA",
-        "destinationAirport": "USH",
-        "flightNumber": "1233",
-        "requestedMonth": "2027-01"
       }
     },
     {
@@ -1334,36 +1214,12 @@
       }
     },
     {
-      "id": "49665c0eda8ffd304644",
-      "origin": "POA",
-      "destination": "MIA",
-      "departureAt": "2026-10-30T01:25:00-03:00",
-      "returnAt": "2026-11-02T04:41:00-05:00",
-      "price": 3723,
-      "currency": "BRL",
-      "airline": null,
-      "transfers": 1,
-      "returnTransfers": null,
-      "foundAt": "2026-09-10T19:42:30Z",
-      "duration": 1789,
-      "actual": true,
-      "link": null,
-      "source": "Travelpayouts / Aviasales Data API",
-      "sourceEndpoint": "aviasales/v3/get_latest_prices",
-      "metadata": {
-        "originAirport": null,
-        "destinationAirport": null,
-        "flightNumber": null,
-        "requestedYear": "2026"
-      }
-    },
-    {
-      "id": "ce0cc80817f3b7b3be41",
+      "id": "f93b34f28b2da56ca184",
       "origin": "POA",
       "destination": "CUN",
       "departureAt": "2026-09-25T01:20:00-03:00",
       "returnAt": "2026-10-02T11:46:00-05:00",
-      "price": 3953,
+      "price": 3937,
       "currency": "BRL",
       "airline": "CM",
       "transfers": 1,
@@ -1371,7 +1227,7 @@
       "foundAt": null,
       "duration": 1307,
       "actual": true,
-      "link": "/search/POA2509CUN02101?t=CM17902992001790332380000673POAPTYCUN17909415601790986800000634CUNPTYPOA_08f6e5de06308f79c6071e1800c02d35_64813&search_date=17092026&expected_price_uuid=01a0aeb0-676f-8030-685d-0c348d818293&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=BYUarRolCxsh7x5secYWUw&expected_price_source=share&expected_price_currency=brl&expected_price=3953",
+      "link": "/search/POA2509CUN02101?t=CM17902992001790332380000673POAPTYCUN17909415601790986800000634CUNPTYPOA_08f6e5de06308f79c6071e1800c02d35_64813&search_date=17092026&expected_price_uuid=01a0aeb0-676f-8030-685d-0c348d818293&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=BYUarRolCxsh7x5secYWUw&expected_price_source=share&expected_price_currency=brl&expected_price=3937",
       "source": "Travelpayouts / Aviasales Data API",
       "sourceEndpoint": "aviasales/v3/prices_for_dates",
       "metadata": {
@@ -1382,12 +1238,12 @@
       }
     },
     {
-      "id": "49b4bd0f5d0ce88106cf",
+      "id": "3edd0443c9474514a994",
       "origin": "POA",
       "destination": "PUJ",
       "departureAt": "2027-05-23T10:45:00-03:00",
       "returnAt": "2027-05-29T21:15:00-04:00",
-      "price": 4024,
+      "price": 4008,
       "currency": "BRL",
       "airline": "LA",
       "transfers": 1,
@@ -1395,7 +1251,7 @@
       "foundAt": null,
       "duration": 1465,
       "actual": true,
-      "link": "/search/POA2305PUJ29051?t=LA18110691001811103000000625POAGRUPUJ18116253001811679300000840PUJGRUPOA_e2aef6c5aede91c0c6496abd834dce4a_65817&search_date=17092026&expected_price_uuid=01a0acc7-f043-8040-a3ae-52dbdce4e4dd&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=dG8EhGgiwExOgtgY8HhC_g&expected_price_source=share&expected_price_currency=brl&expected_price=4024",
+      "link": "/search/POA2305PUJ29051?t=LA18110691001811103000000625POAGRUPUJ18116253001811679300000840PUJGRUPOA_e2aef6c5aede91c0c6496abd834dce4a_65817&search_date=17092026&expected_price_uuid=01a0acc7-f043-8040-a3ae-52dbdce4e4dd&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=dG8EhGgiwExOgtgY8HhC_g&expected_price_source=share&expected_price_currency=brl&expected_price=4008",
       "source": "Travelpayouts / Aviasales Data API",
       "sourceEndpoint": "aviasales/v3/prices_for_dates",
       "metadata": {
@@ -1403,6 +1259,30 @@
         "destinationAirport": "PUJ",
         "flightNumber": "3417",
         "requestedMonth": "2027-05"
+      }
+    },
+    {
+      "id": "efc63257ba5feb7bcc8c",
+      "origin": "POA",
+      "destination": "NYC",
+      "departureAt": "2026-10-30T01:25:00-03:00",
+      "returnAt": "2026-11-07T02:15:00-05:00",
+      "price": 4033,
+      "currency": "BRL",
+      "airline": "CM",
+      "transfers": 1,
+      "returnTransfers": 1,
+      "foundAt": null,
+      "duration": 2282,
+      "actual": true,
+      "link": "/search/POA3010NYC07111?t=CM17933235001793384220001072POAPTYJFK17940177001794097500001210JFKPTYPOA_40403960b3548d95186b61948c72418e_66421&search_date=17092026&expected_price_uuid=01a0b178-e029-8030-ecf3-2df82c7e17c6&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=98JQTke4dk-VsE1GI5u3Xg&expected_price_source=share&expected_price_currency=brl&expected_price=4033",
+      "source": "Travelpayouts / Aviasales Data API",
+      "sourceEndpoint": "aviasales/v3/prices_for_dates",
+      "metadata": {
+        "originAirport": "POA",
+        "destinationAirport": "JFK",
+        "flightNumber": "820",
+        "requestedMonth": "2026-10"
       }
     },
     {
@@ -1526,27 +1406,51 @@
       }
     },
     {
-      "id": "58ccd176985d11993d6b",
+      "id": "b36e24188e2872ecdeee",
       "origin": "POA",
       "destination": "OPO",
-      "departureAt": "2026-11-10T15:00:00-03:00",
+      "departureAt": "2026-11-10T12:30:00-03:00",
       "returnAt": "2026-11-19T16:10:00Z",
-      "price": 5172,
+      "price": 5247,
       "currency": "BRL",
-      "airline": "LA",
+      "airline": "G3",
       "transfers": 2,
       "returnTransfers": 2,
       "foundAt": null,
-      "duration": 3365,
+      "duration": 3515,
       "actual": true,
-      "link": "/search/POA1011OPO19111?t=KL17943228001794410700001285POACGHGRUAMSOPO17951046001795218600002080OPOAMSGRUPOA_192c8cc05622368e4ae448c4630e48ef_84800&search_date=14092026&expected_price_uuid=01a09d86-4ed2-8030-29ed-2107be6d7321&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=A7uIoXnO4eWkOdh_ueq1Lw&expected_price_source=share&expected_price_currency=brl&expected_price=5172",
+      "link": "/search/POA1011OPO19111?t=KL17943138001794410700001435POAGIGAMSOPO17951046001795218600002080OPOAMSGRUPOA_7158296e00f4e07062cf5409e5cf4b38_86413&search_date=17092026&expected_price_uuid=01a0b079-39db-8030-2520-0f25f915cea6&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=ZsK_jB-Hc7twWVCO_cNmxg&expected_price_source=share&expected_price_currency=brl&expected_price=5247",
       "source": "Travelpayouts / Aviasales Data API",
       "sourceEndpoint": "aviasales/v3/prices_for_dates",
       "metadata": {
         "originAirport": "POA",
         "destinationAirport": "OPO",
-        "flightNumber": "3157",
+        "flightNumber": "9319",
         "requestedMonth": "2026-11"
+      }
+    },
+    {
+      "id": "9897f1c008a8e09da9c7",
+      "origin": "POA",
+      "destination": "FAO",
+      "departureAt": "2027-02-09T21:15:00-03:00",
+      "returnAt": "2027-02-23T06:05:00Z",
+      "price": 5416,
+      "currency": "BRL",
+      "airline": "TP",
+      "transfers": 1,
+      "returnTransfers": 1,
+      "foundAt": null,
+      "duration": 1920,
+      "actual": true,
+      "link": "/search/POA0902FAO23021?t=TP18022077001802274000000925POALISFAO18033627001803411600000995FAOLISPOA_ba8834f6da46fab09785db4d3035daf4_89197&search_date=17092026&expected_price_uuid=01a0b111-d084-8030-2dbf-905a8232c25f&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=f6133qt1FNA1cPU9SCLYgQ&expected_price_source=share&expected_price_currency=brl&expected_price=5416",
+      "source": "Travelpayouts / Aviasales Data API",
+      "sourceEndpoint": "aviasales/v3/prices_for_dates",
+      "metadata": {
+        "originAirport": "POA",
+        "destinationAirport": "FAO",
+        "flightNumber": "118",
+        "requestedMonth": "2027-02"
       }
     },
     {
@@ -1598,36 +1502,12 @@
       }
     },
     {
-      "id": "ba2846e6180ba8f65465",
-      "origin": "POA",
-      "destination": "PAR",
-      "departureAt": "2027-05-20T14:15:00-03:00",
-      "returnAt": "2027-06-01T07:15:00+02:00",
-      "price": 5867,
-      "currency": "BRL",
-      "airline": "AD",
-      "transfers": 2,
-      "returnTransfers": 2,
-      "foundAt": null,
-      "duration": 2875,
-      "actual": true,
-      "link": "/search/POA2005PAR01061?t=AD18108225001810933800001555POACGHVCPLISBVA18118341001811895300001320ORYLISVCPPOA_c86ec56a1f2163979b4ee30c12cd5415_96671&search_date=13092026&expected_price_uuid=01a09d26-7472-8030-eaa8-76e11ae3a3c2&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=XM7bbWhOUXs6FvHsOE0VSg&expected_price_source=share&expected_price_currency=brl&expected_price=5867",
-      "source": "Travelpayouts / Aviasales Data API",
-      "sourceEndpoint": "aviasales/v3/prices_for_dates",
-      "metadata": {
-        "originAirport": "POA",
-        "destinationAirport": "BVA",
-        "flightNumber": "6035",
-        "requestedMonth": "2027-05"
-      }
-    },
-    {
-      "id": "887fc7037aedee567bfc",
+      "id": "9a9cc538821c980b1a4c",
       "origin": "POA",
       "destination": "AUA",
       "departureAt": "2026-12-25T11:30:00-03:00",
       "returnAt": "2027-01-03T16:35:00-04:00",
-      "price": 5875,
+      "price": 5851,
       "currency": "BRL",
       "airline": "LA",
       "transfers": 3,
@@ -1635,7 +1515,7 @@
       "foundAt": null,
       "duration": 2930,
       "actual": true,
-      "link": "/search/POA2512AUA03011?t=DM17981982001798293300001645POAFLNSCLLIMAUA17989941001799074800001285AUAPUJGRUPOA_ab2354229455a2b564affdd64f437bd6_96080&search_date=17092026&expected_price_uuid=01a0acfc-ae72-8030-65ff-ffdf1c56ed91&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=6LQhgu7F6Hd6gdj-LJfRNw&expected_price_source=share&expected_price_currency=brl&expected_price=5875",
+      "link": "/search/POA2512AUA03011?t=DM17981982001798293300001645POAFLNSCLLIMAUA17989941001799074800001285AUAPUJGRUPOA_ab2354229455a2b564affdd64f437bd6_96080&search_date=17092026&expected_price_uuid=01a0acfc-ae72-8030-65ff-ffdf1c56ed91&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=6LQhgu7F6Hd6gdj-LJfRNw&expected_price_source=share&expected_price_currency=brl&expected_price=5851",
       "source": "Travelpayouts / Aviasales Data API",
       "sourceEndpoint": "aviasales/v3/prices_for_dates",
       "metadata": {
@@ -1718,6 +1598,30 @@
       }
     },
     {
+      "id": "9664a926e1ef9ee59fc2",
+      "origin": "POA",
+      "destination": "LAX",
+      "departureAt": "2027-05-19T06:00:00-03:00",
+      "returnAt": "2027-05-29T15:55:00-07:00",
+      "price": 6018,
+      "currency": "BRL",
+      "airline": null,
+      "transfers": 2,
+      "returnTransfers": null,
+      "foundAt": "2026-09-13T21:28:08Z",
+      "duration": 2534,
+      "actual": true,
+      "link": null,
+      "source": "Travelpayouts / Aviasales Data API",
+      "sourceEndpoint": "aviasales/v3/get_latest_prices",
+      "metadata": {
+        "originAirport": null,
+        "destinationAirport": null,
+        "flightNumber": null,
+        "requestedYear": "2026"
+      }
+    },
+    {
       "id": "3e615eac64df8381c5a4",
       "origin": "POA",
       "destination": "HAJ",
@@ -1742,12 +1646,12 @@
       }
     },
     {
-      "id": "e24c920132753dceaf75",
+      "id": "441d21816a899aeceafe",
       "origin": "POA",
       "destination": "LIS",
       "departureAt": "2026-09-30T00:15:00-03:00",
       "returnAt": "2026-11-03T10:00:00Z",
-      "price": 6270,
+      "price": 6245,
       "currency": "BRL",
       "airline": "TP",
       "transfers": 0,
@@ -1755,7 +1659,7 @@
       "foundAt": null,
       "duration": 2200,
       "actual": true,
-      "link": "/search/POA3009LIS03111?t=TP17907273001790781300000660POALIS17937000001793781600001540LISOPOGRUCGHPOA_86205c7293f8c9566d1cef3462378989_102533&search_date=17092026&expected_price_uuid=01a0ad38-2c4a-8040-27a4-b93ecbe5eeb4&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=OFDnF7hoNoTyU-CgeVDiew&expected_price_source=share&expected_price_currency=brl&expected_price=6270",
+      "link": "/search/POA3009LIS03111?t=TP17907273001790781300000660POALIS17937000001793781600001540LISOPOGRUCGHPOA_86205c7293f8c9566d1cef3462378989_102533&search_date=17092026&expected_price_uuid=01a0ad38-2c4a-8040-27a4-b93ecbe5eeb4&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=OFDnF7hoNoTyU-CgeVDiew&expected_price_source=share&expected_price_currency=brl&expected_price=6245",
       "source": "Travelpayouts / Aviasales Data API",
       "sourceEndpoint": "aviasales/v3/prices_for_dates",
       "metadata": {
@@ -1838,6 +1742,30 @@
       }
     },
     {
+      "id": "b4ff4a7c3ecbaa529413",
+      "origin": "POA",
+      "destination": "PAR",
+      "departureAt": "2027-05-20T19:05:00-03:00",
+      "returnAt": "2027-06-01T13:15:00+02:00",
+      "price": 6434,
+      "currency": "BRL",
+      "airline": "AD",
+      "transfers": 2,
+      "returnTransfers": 2,
+      "foundAt": null,
+      "duration": 2500,
+      "actual": true,
+      "link": "/search/POA2005PAR01061?t=AT18108399001810922700001080POAGRUCMNORY18118557001811922900001420ORYCMNGRUPOA_31b52822ac79b0970e58479b0d9f6550_105954&search_date=17092026&expected_price_uuid=01a0b1ab-049b-8030-ec24-d1e934981c77&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=HR1mzBVLCKY7g_RTqnKWrQ&expected_price_source=share&expected_price_currency=brl&expected_price=6434",
+      "source": "Travelpayouts / Aviasales Data API",
+      "sourceEndpoint": "aviasales/v3/prices_for_dates",
+      "metadata": {
+        "originAirport": "POA",
+        "destinationAirport": "ORY",
+        "flightNumber": "6526",
+        "requestedMonth": "2027-05"
+      }
+    },
+    {
       "id": "2d2db4aa3ac03a85f25f",
       "origin": "POA",
       "destination": "AMS",
@@ -1886,54 +1814,6 @@
       }
     },
     {
-      "id": "4b0a60fb8a36436835c2",
-      "origin": "POA",
-      "destination": "IPC",
-      "departureAt": "2026-09-24T21:05:00-03:00",
-      "returnAt": "2026-09-27T15:45:00-05:00",
-      "price": 7058,
-      "currency": "BRL",
-      "airline": "AR",
-      "transfers": 2,
-      "returnTransfers": 2,
-      "foundAt": null,
-      "duration": 4210,
-      "actual": true,
-      "link": "/search/POA2409IPC27091?t=LA17902839001790424900002470POAAEPSCLIPC17905239001790635500001740IPCSCLFLNPOA_d75a6916fa4d44e6abc9ba7a4a325fad_115421&search_date=16092026&expected_price_uuid=01a0ac7d-f8e4-8040-6868-b2558330bae8&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=V0mId_oImEmDIU1lrlGcLA&expected_price_source=share&expected_price_currency=brl&expected_price=7058",
-      "source": "Travelpayouts / Aviasales Data API",
-      "sourceEndpoint": "aviasales/v3/prices_for_dates",
-      "metadata": {
-        "originAirport": "POA",
-        "destinationAirport": "IPC",
-        "flightNumber": "1233",
-        "requestedMonth": "2026-09"
-      }
-    },
-    {
-      "id": "af9578519bbfab56584a",
-      "origin": "POA",
-      "destination": "PAR",
-      "departureAt": "2026-09-24T16:20:00-03:00",
-      "returnAt": "2026-10-10T13:10:00+02:00",
-      "price": 7091,
-      "currency": "BRL",
-      "airline": "G3",
-      "transfers": 2,
-      "returnTransfers": 1,
-      "foundAt": null,
-      "duration": 2755,
-      "actual": true,
-      "link": "/search/POA2409PAR10101?t=KL17902668001790358300001225POAGIGAMSCDG17916378001791711600001530CDGGIGPOA_6a7def9edb0d1671872536b8d7d2b58b_117008&search_date=10092026&expected_price_uuid=01a08b7a-787f-8040-63cc-5bb9209bbae1&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=PfgRC5g49iw-T2_kTbM2Iw&expected_price_source=share&expected_price_currency=brl&expected_price=7091",
-      "source": "Travelpayouts / Aviasales Data API",
-      "sourceEndpoint": "aviasales/v3/prices_for_dates",
-      "metadata": {
-        "originAirport": "POA",
-        "destinationAirport": "CDG",
-        "flightNumber": "2089",
-        "requestedMonth": "2026-09"
-      }
-    },
-    {
       "id": "09be945c6cbcf579e096",
       "origin": "POA",
       "destination": "BER",
@@ -1955,6 +1835,30 @@
         "destinationAirport": "BER",
         "flightNumber": "9325",
         "requestedMonth": "2026-12"
+      }
+    },
+    {
+      "id": "0927bc8a898f95f8a9d9",
+      "origin": "POA",
+      "destination": "IPC",
+      "departureAt": "2026-09-24T21:40:00-03:00",
+      "returnAt": "2026-09-27T15:45:00-05:00",
+      "price": 7251,
+      "currency": "BRL",
+      "airline": "LA",
+      "transfers": 3,
+      "returnTransfers": 2,
+      "foundAt": null,
+      "duration": 5610,
+      "actual": true,
+      "link": "/search/POA2409IPC27091?t=LA17902860001790433900002585POACWBGRUSCLIPC17905239001790712600003025IPCSCLAEPPOA_c1a72f850d46adc57bf79ef707d3f0e0_119411&search_date=17092026&expected_price_uuid=01a0b1a7-d6da-8030-2824-1267423632e2&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=HJotpxgvkJ4pRV-ywLpAOA&expected_price_source=share&expected_price_currency=brl&expected_price=7251",
+      "source": "Travelpayouts / Aviasales Data API",
+      "sourceEndpoint": "aviasales/v3/prices_for_dates",
+      "metadata": {
+        "originAirport": "POA",
+        "destinationAirport": "IPC",
+        "flightNumber": "3132",
+        "requestedMonth": "2026-09"
       }
     },
     {
@@ -2030,6 +1934,30 @@
       }
     },
     {
+      "id": "6a31723b69425e26d977",
+      "origin": "POA",
+      "destination": "BKK",
+      "departureAt": "2027-03-07T20:05:00-03:00",
+      "returnAt": "2027-04-11T02:30:00+07:00",
+      "price": 7970,
+      "currency": "BRL",
+      "airline": "LA",
+      "transfers": 2,
+      "returnTransfers": 2,
+      "foundAt": null,
+      "duration": 3795,
+      "actual": true,
+      "link": "/search/POA0703BKK11041?t=LA18044499001804608300002040POAGRULHRLGWBKK18074106001807479900001755BKKDOHGRUPOA_3ec897ca21117e7dde7999cf74b33106_131265&search_date=17092026&expected_price_uuid=01a0b178-35eb-8030-6b94-f5c940ad10c0&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR1%7CTBC0&itinerary_key=tevbTRwRMynPVkOKMR9wiQ&expected_price_source=share&expected_price_currency=brl&expected_price=7970",
+      "source": "Travelpayouts / Aviasales Data API",
+      "sourceEndpoint": "aviasales/v3/prices_for_dates",
+      "metadata": {
+        "originAirport": "POA",
+        "destinationAirport": "BKK",
+        "flightNumber": "4526",
+        "requestedMonth": "2027-03"
+      }
+    },
+    {
       "id": "89fe4b74ffa618463c45",
       "origin": "POA",
       "destination": "BKK",
@@ -2078,6 +2006,30 @@
       }
     },
     {
+      "id": "6308ba7176cce00dd751",
+      "origin": "POA",
+      "destination": "MOW",
+      "departureAt": "2026-10-01T17:45:00-03:00",
+      "returnAt": "2026-11-03T01:10:00+03:00",
+      "price": 9929,
+      "currency": "BRL",
+      "airline": "LA",
+      "transfers": 3,
+      "returnTransfers": 4,
+      "foundAt": null,
+      "duration": 5815,
+      "actual": true,
+      "link": "/search/POA0110MOW03111?t=AD17908767001791057600002655POAGRUMADDXBDWCVKO17936682001793836200003160VKOSAWMADLISVCPGRUPOA_dd32c715f93d79850ddbac66ca6e2384_163518&search_date=17092026&expected_price_uuid=01a0b17e-b2d3-8050-ece4-3c6b87e29816&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=w6mPd-jodeD4_BHU6zB2Ow&expected_price_source=share&expected_price_currency=brl&expected_price=9929",
+      "source": "Travelpayouts / Aviasales Data API",
+      "sourceEndpoint": "aviasales/v3/prices_for_dates",
+      "metadata": {
+        "originAirport": "POA",
+        "destinationAirport": "VKO",
+        "flightNumber": "3219",
+        "requestedMonth": "2026-10"
+      }
+    },
+    {
       "id": "8635167fcc260bcf980b",
       "origin": "POA",
       "destination": "MOW",
@@ -2102,27 +2054,27 @@
       }
     },
     {
-      "id": "e672748806cf68f0c351",
+      "id": "3f812a13b45fa854bf72",
       "origin": "POA",
-      "destination": "MOW",
-      "departureAt": "2026-10-01T09:45:00-03:00",
-      "returnAt": "2026-11-03T06:00:00+03:00",
-      "price": 10485,
+      "destination": "DEL",
+      "departureAt": "2026-12-01T17:10:00-03:00",
+      "returnAt": "2026-12-08T03:45:00+05:30",
+      "price": 11008,
       "currency": "BRL",
       "airline": "AD",
-      "transfers": 4,
-      "returnTransfers": 3,
+      "transfers": 2,
+      "returnTransfers": 2,
       "foundAt": null,
-      "duration": 5015,
+      "duration": 3955,
       "actual": true,
-      "link": "/search/POA0110MOW03111?t=UX17908479001791003000002225POAGRURECMADSAWVKO17936856001793831400002790VKOSAWISTMADGRUPOA_84364df3354ec5b153e68f761c1c3d4c_172199&search_date=14092026&expected_price_uuid=01a0a10b-265f-8030-66f1-17998edabb0d&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=m0HDn_7sfhLyTfITJwFNnQ&expected_price_source=share&expected_price_currency=brl&expected_price=10485",
+      "link": "/search/POA0112DEL08121?t=AZ17961450001796262900001455POAGRUFCODEL17967015001796820900002500DELFCOGRUPOA_8923b7b7514fb97e0d8029882abc1623_181177&search_date=17092026&expected_price_uuid=01a0affc-6e12-8050-6d01-e5ca066c8d9e&static_fare_key=TY%7CP1%7CH1%7CL1_1_23%7CCH0%7CR0%7CTBC1&itinerary_key=UwseHi4TgrWVWkMg8kPo7w&expected_price_source=share&expected_price_currency=brl&expected_price=11008",
       "source": "Travelpayouts / Aviasales Data API",
       "sourceEndpoint": "aviasales/v3/prices_for_dates",
       "metadata": {
         "originAirport": "POA",
-        "destinationAirport": "VKO",
-        "flightNumber": "2854",
-        "requestedMonth": "2026-10"
+        "destinationAirport": "DEL",
+        "flightNumber": "4453",
+        "requestedMonth": "2026-12"
       }
     },
     {
